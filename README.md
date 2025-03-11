@@ -13,7 +13,6 @@ Start the console application and follow the on-screen instructions.
 
 Logic written to allow easy testing by creating mocks of interfaces.
 
-Create one test for the TriangleAppRunner class, although many different test scenarious could be added here covering all possible options.
+One test has been created for the TriangleAppRunner class, although many different test scenarios covering all possible options can be added here.
 
-Class TriangleTypeServiceTests covers main logic of application - which is recognising of triangle type.
-
+The TriangleTypeServiceTests class covers the main logic of the application - triangle type recognition.
