@@ -14,7 +14,7 @@ public static class DependencyServices
         services.AddScoped<ITriangleTypeService, TriangleTypeService>();
         services.AddScoped<IInstructionService, InstructionService>();
         services.AddScoped<IConsoleService, ConsoleService>();
-        services.AddScoped<Program>();
+        services.AddScoped<TriangleAppRunner>();
 
         return services.BuildServiceProvider();
     }
