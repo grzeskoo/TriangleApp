@@ -16,10 +16,10 @@ internal class TriangleAppRunner
         IInstructionService instructionService,
         IConsoleService consoleService)
     {
-        _inputDataService = inputDataService;
-        _triangleTypeService = triangleTypeService;
-        _instructionService = instructionService;
-        _consoleService = consoleService;
+        _inputDataService = inputDataService ?? throw new ArgumentNullException(nameof(inputDataService));
+        _triangleTypeService = triangleTypeService ?? throw new ArgumentNullException(nameof(triangleTypeService));
+        _instructionService = instructionService ?? throw new ArgumentNullException(nameof(instructionService));
+        _consoleService = consoleService ?? throw new ArgumentNullException(nameof(consoleService));
     }
 
     public void Run()
